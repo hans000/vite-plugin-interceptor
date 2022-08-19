@@ -1,0 +1,39 @@
+{
+	"name": "vite-plugin-interceptor",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [
+		"vite",
+		"vite-plugin",
+		"mock",
+		"easy-interceptor"
+	],
+	"files": [
+		"dist",
+		"readme.md",
+		"license",
+		"package.json"
+	],
+	"main": "./dist/index.js",
+	"types": "./dist/types/index.d.ts",
+	"scripts": {
+		"build": "tsc && cpx ./src/scripts/**/* ./dist/scripts &&  cpx ./src/typing.d.ts ./dist"
+	},
+	"author": {
+		"name": "hans000",
+		"email": "hhance@163.com"
+	},
+	"repository": {
+		"url": "https://github.com/hans000/vite-plugin-interceptor.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hans000/vite-plugin-interceptor/issues"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^18.7.6",
+		"cpx": "^1.5.0",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.8"
+	}
+}
