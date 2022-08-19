@@ -2,6 +2,12 @@
 
 中文 | [English](./readme.md)
 
+一款基于service worker在**开发环境**中用于拦截并修改请求的vite插件。
+
+> 浏览器需要支持service worker
+
+> 生产环境可以借助浏览器插件[easy-interceptor](https://github.com/hans000/easy-interceptor)
+
 ## 使用方法
 
 ```

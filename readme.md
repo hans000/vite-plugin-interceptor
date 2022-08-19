@@ -2,8 +2,13 @@
 
 English | [中文](./readme-zh.md)
 
-## Usage
+A vite plugin based on service worker to intercept and modify requests in a **development** environment
 
+> the browser needs to support service worker
+
+> a chrome extension can be used in production environment. [easy-interceptor](https://github.com/hans000/easy-interceptor)
+
+## Usage
 ```
 npm i -D vite-plugin-interceptor
 ```
