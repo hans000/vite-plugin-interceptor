@@ -9,7 +9,7 @@ function handle(id: string, code: string, mockDir?: string) {
     
     return `
 // #region vite-plugin-interceptor generate
-const __moduleMap__ = import.meta.globEager('/${mockDir || '__mock__'}/**/*.(t|j)s')
+const __moduleMap__ = import.meta.globEager('/${mockDir || 'mock'}/**/*.(t|j)s')
 ${scriptText}
 // #endregion
 

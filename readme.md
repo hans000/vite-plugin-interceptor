@@ -45,6 +45,12 @@ export default function() {
 
 ```
 
+ts type, new a `interceptor.d.ts` file, input this text
+
+```
+/// <reference types="vite-plugin-interceptor/typing" />
+```
+
 ## API
 
 ### \_\_INTERCEPTOR_DEVTOOL\_\_

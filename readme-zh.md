@@ -10,10 +10,12 @@
 
 ## 使用方法
 
+
 ```
 npm i -D vite-plugin-interceptor
 ```
-// 在vite.config.ts
+
+在vite.config.ts
 ```
 
 import interceptor from 'vite-plugin-interceptor'
@@ -29,7 +31,8 @@ export default defineConfig({
     ]
 })
 ```
-// __mock__目录下新建ts或js文件，必须使用默认导出，使用暴露的api来设置规则
+
+__mock__目录下新建ts或js文件，必须使用默认导出，使用暴露的api来设置规则
 ```
 export default function() {
     window.__INTERCEPTOR_DEVTOOL__.set(
@@ -45,6 +48,12 @@ export default function() {
 }
 
 ```
+ts类型声明，在项目目录新建interceptor.d.ts，输入以下内容
+
+```
+/// <reference types="vite-plugin-interceptor/typing" />
+```
+
 
 ## API
 
