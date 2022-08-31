@@ -64,8 +64,8 @@ ts type, new a `interceptor.d.ts` file, input this text
 ### InterceptorRule
 |prop|explain|type|description|
 |:--|:---|:---|:---|
-|url|match request url|string|必填
-|response|response text|string|必填
+|url|match request url|string|required
+|response|response text|string|required
 |delay|delay|number|0
 |enable|enable rule|boolean|true
 |method|request method|`get` `post` `put` `delete`|
