@@ -74,7 +74,7 @@ navigator.serviceWorker.register('./sw000.js', { scope: './' })
                 if (handle) {
                     handle()
                 } else {
-                    console.error('must be used export default in ', key)
+                    console.error('must use export default in', key)
                 }
             })
         })
