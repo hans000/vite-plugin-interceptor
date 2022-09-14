@@ -51,6 +51,18 @@ ts type, create a file `interceptor.d.ts`, input this text
 /// <reference types="vite-plugin-interceptor/typing" />
 ```
 
+
+you will meet the following errors in https project. The solutions are as follows
+```
+Uncaught (in promise) DOMException: Failed to register a ServiceWorker for scope ('https://127.0.0.1/') with script ('https://127.0.0.1/sw000.js'): An SSL certificate error occurred when fetching the script.
+
+// terminal
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://localhost:443
+
+// windows
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir=./tmp --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://localhost:443
+```
+
 ## API
 
 ### \_\_INTERCEPTOR_DEVTOOL\_\_
